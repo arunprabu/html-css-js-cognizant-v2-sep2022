@@ -356,10 +356,47 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Id selector */
+header {
+  border-bottom: solid 1px #ccc;
+  height: 122px;
+}
 
+a{
+  text-decoration: none;
+}
+
+/* Id selector */
+#mainHeader{
+  width: 1180px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
 
 /* class selector */
+.logoLink{
+  border: solid 1px red;
+  width: 262px;
+  display: inline-block;
+}
+
+.primaryNav{
+  border: solid 1px red;
+  display: inline-block;
+  width: calc(100% - 272px);
+  text-align: right;
+  vertical-align:top;
+}
+
+.primaryNav ul {
+  margin: 6px;
+}
+
+.primaryNav li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 22px;
+  border: solid 1px green;
+}
 
 
 /* attribute selector */

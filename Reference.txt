@@ -101,7 +101,6 @@ kebab-case
 snake_case
 --
   NEVER USE 
-<<<<<<< HEAD
 
 CSS 
 --
