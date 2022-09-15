@@ -143,9 +143,9 @@ CSS
 
   Selectors 
   --
-    1. Element Selector
-    2. ID Selector
-    3. Class Selector
+    1. Element Selector (NOT RECOMMENDED)
+    2. ID Selector 
+    3. Class Selector (RECOMMENDED)
     4. Attribute Selector
     5. Pseudo Selector [TODO]
 
