@@ -572,6 +572,7 @@ a{
   border: solid 1px #2f78c4;
 }
 
+/* attribute selector */
 .contactFormWrapper form input[type='text']{
   background-color: #f7fdfe;
 }
@@ -583,10 +584,56 @@ a{
   border: solid 1px #2f78c4;
 }
 
-/* attribute selector in contact form */
 /* Responsive CSS - accessibility */
 /* JS Intro */
 
 /* pseudo selector - TODO */
 
 /* Learn about position, overflow */
+
+.collapsibleMenu{
+  display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    background: yellow;
+  }
+
+  .primaryNav{
+    display: none;
+  }
+
+  .collapsibleMenu{
+    display: inline-block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{
+    background: yellowgreen;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{
+    background: #45bcc9;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body{
+    background: #ccc;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body{
+    background: skyblue;
+  }
+}
