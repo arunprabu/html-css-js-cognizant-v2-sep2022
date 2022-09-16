@@ -351,6 +351,18 @@ template {
 
 
 /* Custom style */
+/* variables */
+
+:root {
+  --darkblue: #2f78c4;
+  --white: #ffffff;
+}
+
+/* Embedding custom fonts */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
 
 /* Util styles */
 .red{
@@ -360,9 +372,13 @@ template {
   border: solid 1px green;
 }
 
+.text-center{
+  text-align: center;
+}
+
 /* Element Selector */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
 }
 
 header {
@@ -442,7 +458,7 @@ a{
   padding: 40px;
 }
 .shortIntro p{
-  color: #2f78c4;
+  color: var(--darkblue);
   margin: 0 auto;
   font-size: 36px;
   width: 1180px;
@@ -486,11 +502,11 @@ a{
   height: 100px;
 }
 .reportsContainer .report h3 {
-  color: #2f78c4;
+  color: var(--darkblue);
   font-weight: normal;
 }
 .reportsContainer .report .reportLink {
-  color: #2f78c4;
+  color: var(--darkblue);
   font-weight: bold;
   font-size: 15px;
 }
@@ -500,10 +516,77 @@ a{
 
 /* footer ends */
 
+/* about page */
+.banner {
+  background-color: #0060fa;
+}
+.banner h1{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  color: #fff;
+}
+.aboutBanner{
+  width: 1180px;
+  margin: 0 auto;
+  padding: 100px 50px;
+}
+.aboutBanner h2, .aboutBanner p {
+  text-align: center;
+  color: #fff;
+}
+
+.videoContainer{
+  width: 100%;
+}
+
+.videoArea{
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* contact page */
+.contactFormWrapper{
+  
+}
+.contactFormWrapper form{
+  width: 1180px;
+  margin: 0 auto;
+  padding: 1% 20%;
+}
+.contactFormWrapper form div{
+  margin-bottom: 20px;
+}
+
+.contactFormWrapper form label {
+  width: 6%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+.contactFormWrapper form input{
+  width: 20%;
+  padding: 8px 12px;
+  display: inline-block;
+  border: solid 1px #2f78c4;
+}
+
+.contactFormWrapper form input[type='text']{
+  background-color: #f7fdfe;
+}
+
+.contactFormWrapper form textarea{
+  width: 34%;
+  padding: 8px 12px;
+  display: inline-block;
+  border: solid 1px #2f78c4;
+}
+
 /* attribute selector in contact form */
-/* Box Model */
 /* Responsive CSS - accessibility */
 /* JS Intro */
 
 /* pseudo selector - TODO */
 
+/* Learn about position, overflow */
